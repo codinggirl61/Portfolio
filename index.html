@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/edd0240440.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!--header-->
+            <div class="header-text">
+                <p>Web Development</p>
+                <h1>Hi, I'm <span> Coding Girl</span><br> From INDIA</h1>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/about1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <h3>Hello, I'm Here to help your next Project! <br><br></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt minus corporis
+                         quidem vitae esse ab possimus sed fugit veritatis! Placeat repellendus dolore
+                     ad id cum voluptatum hic nostrum velit odit. Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Adipisci excepturi ducimus quisquam dolor, doloremque
+                     quam beatae alias officia praesentium fugiat facilis distinctio dolores neque, corrupti iusto numquam amet autem odio!</p>
+                     
+                     <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                     </div>
+
+                     <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2018-2022</span><br>B.Tech in Computer Science Engineering, New Delhi</li>
+                            <li><span>2016-2018</span><br>Your High Secondary Qualification</li>
+                            <li><span>2016</span><br>Your Primary Qualification</li>
+
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Web Development</li>
+                            <li><span>UI/UX</span><br>Web Designing</li>
+                            <li><span>Android Development</span><br>Building Android/ios Apps</li>
+                        </ul>
+                     </div>  <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development</span><br>3 Year Experience as a Web Developer at It Company (2019-2022)</li>
+                            <li><span>Android Development</span><br>1 Year Experience as a Android Developmentat It Company (2022-2023)</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--services section-->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">My <span>Services</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nemo consequuntur neque voluptate. Eum tempore reiciendis placeat.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-codepen"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Nemo consequuntur neque voluptate. Eum tempore reiciendis placeat.</p>
+                    <a href="#">Learn More</a>
+                </div> 
+                 <div>
+                    <i class="fa-solid fa-code-compare"></i>
+                    <h2>E-Commerce</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Nemo consequuntur neque voluptate. Eum tempore reiciendis placeat.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Portfolio Design-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Latest <span>Project</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/ecommerce app.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="img/socialmedia.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="work">
+                    <img src="img/musicapp.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!--contact-->
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact<span> Us</span></h1>
+                    <p><i class="fa-solid fa-share"></i>codinggirl6140@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i></i>0123456789</p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="img/@Shakku Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Coding Girl 2023 | All Right Reserved by Easy Tutorial</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById('sidemenu');
+        function openmenu(){
+            sidemeu.style.right ="0";
+        }
+        function closemenu(){
+            sidemeu.style.right ="-200px";
+        }
+    </script>
+
+</body>
+</html>
